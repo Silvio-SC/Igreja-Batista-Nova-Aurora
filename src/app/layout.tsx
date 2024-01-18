@@ -4,6 +4,7 @@ import './globals.css'
 import './fontStyles.css'
 import { Header } from '@/components/hearder'
 import { Footer } from '@/components/footer'
+import PrelineScript from '@/components/PrelineScript'
 
 const roboto = Roboto_Slab({ subsets: ['latin'], weight: ['100', '300', '400', '500', '700', '900']})
 
@@ -23,7 +24,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        </body>
+      </body>
+      <PrelineScript />
     </html>
   )
 }

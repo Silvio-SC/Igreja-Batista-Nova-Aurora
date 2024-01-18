@@ -1,5 +1,5 @@
 import { Activities } from '@/components/activities'
-import Image from 'next/image'
+import { Carousel } from '@/components/carousel'
 
 export default function Home() {
   return (
@@ -22,6 +22,13 @@ export default function Home() {
         </div>
       </section>
       <Activities />
+      <section className="p-8 bg-green-50 flex flex-col items-center gap-12">
+        <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
+          Equipe Pastoral
+        </h2>
+      </section> 
+      <Carousel />
     </main>
   )
 }
+ 
