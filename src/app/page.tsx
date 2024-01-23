@@ -1,5 +1,6 @@
 import { Activities } from '@/components/activities'
 import { Carousel } from '@/components/carousel'
+import { Pastores } from '@/components/pastores'
 
 export default function Home() {
   return (
@@ -22,12 +23,14 @@ export default function Home() {
         </div>
       </section>
       <Activities />
-      <section className="p-8 bg-green-50 flex flex-col items-center gap-12">
+      <section className="px-8 py-36 bg-green-50 flex flex-col items-center gap-24">
         <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
           Equipe Pastoral
         </h2>
+        <Pastores />
       </section> 
       <Carousel />
+      
     </main>
   )
 }
