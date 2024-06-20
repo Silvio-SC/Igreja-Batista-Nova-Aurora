@@ -26,7 +26,7 @@ export const Header = () => {
                     </li>
                     <li>
                         <Link href="/recursos" className="hover:text-amber-500">
-                            Recursos
+                            Confissão
                         </Link> |
                     </li>
                     <li>

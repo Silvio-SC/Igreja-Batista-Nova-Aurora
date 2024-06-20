@@ -1,6 +1,7 @@
 // components/ContactForm.js
 
 import React, { useState } from "react";
+import Input from "../Input";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("");
@@ -19,7 +20,6 @@ const ContactForm = () => {
     });
 
     if (response.ok) {
-    // if (true) {
       form.reset();
       setStatus("SUCCESS");
     } else {
@@ -29,25 +29,42 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-6 min-w-full">
+
+      <Input 
+        label="Seu Nome Completo" id="name" type="text" name="nome"
+        placeholder="Coloque seu nome aqui." required
+      />
+
+      <Input 
+        label="Seu Email" id="email" type="email" name="email"
+        placeholder="Coloque seu email aqui." required
+      />
+
+      <Input 
+        label="Seu Celular" id="tel" type="tel" name="telefone"  
+        placeholder="(xx) xxxxx-xxxx" required
+      />
+
       <div className="flex flex-col">
-        <label htmlFor="name" className="text-xl drop-shadow"> Seu Nome </label>
-        <input type="text" name="name" id="name" required 
+        <label htmlFor="message" className="text-xl drop-shadow"> Escreva sua mensagem </label>
+        <textarea 
+          name="message" id="message" rows={2} required
+          placeholder="Deixe sua mensagem aqui."
           className="outline-none p-1 bg-transparent border-b-2 border-gray-300 hover:border-gray-700 focus:border-gray-700"
-          placeholder="Coloque seu nome aqui."
-        />
+        >
+        </textarea>
       </div>
-
-      <label htmlFor="email"> SEU EMAIL </label>
-      <input type="email" name="email" id="email" required />
-
-      <label htmlFor="tel"> SEU CELULAR </label>
-      <input type="tel" name="telefone" id="tel" required />
-
-      <label htmlFor="message"> ESCREVA SUA MENSAGEM </label>
-      <textarea name="message" id="message" required></textarea>
-
-      {status === "SUCCESS" ? <p>Enviado com Sucesso!</p> : <button type="submit">Submit</button>}
-      {status === "ERROR" && <p>Ooops! Aconteceu algum erro.</p>}
+      
+      {status === "SUCCESS" ? 
+        <p className="drop-shadow">Enviado com Sucesso!</p> : 
+        <button 
+          type="submit" 
+          className="max-w-fit border-indigo-900 rounded py-1 px-3 border 
+            hover:text-gray-100 hover:bg-emerald-500 hover:border-emerald-500
+            duration-300 text-md ">
+            Enviar
+        </button>}
+      {status === "ERROR" && <p className="drop-shadow" >Ooops! Aconteceu algum erro.</p>}
 
     </form>
   );
