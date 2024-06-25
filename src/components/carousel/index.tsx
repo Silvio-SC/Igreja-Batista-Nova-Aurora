@@ -18,35 +18,35 @@ export const Carousel = () => {
                         <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
                             <div className="hs-carousel-slide">
                                 <div className="flex justify-center">
-                                <span className="self-center transition duration-700 overflow-hidden ">
-                                    <Image src={f1} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0 lg:ml-0"/>
+                                <span className="self-center flex justify-center transition duration-700 overflow-hidden ">
+                                    <Image src={f1} alt='fotos da comunidade' className="h-[550px] sm:min-h-[520px] max-w-max"/>
                                 </span>
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
                                 <div className="flex justify-center">
-                                    <span className="self-center transition duration-700 overflow-hidden">
-                                        <Image src={f2} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0"/>
+                                    <span className="flex justify-center self-center transition duration-700 overflow-hidden">
+                                        <Image src={f2} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max position"/>
                                     </span>
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
                                 <div className="flex justify-center">
-                                    <span className="self-center transition duration-700 overflow-hidden">
-                                        <Image src={f3} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0"/>
+                                    <span className="flex justify-center self-center transition duration-700 overflow-hidden">
+                                        <Image src={f3} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max"/>
                                     </span>                        
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
                                 <div className="flex justify-center">
-                                    <span className="self-center transition duration-700 overflow-hidden">
-                                        <Image src={f4} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0"/>
+                                    <span className="flex justify-center self-center transition duration-700 overflow-hidden">
+                                        <Image src={f4} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max"/>
                                     </span>                        
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
                                 <div className="flex justify-center">
-                                    <span className="self-center transition duration-700 overflow-hidden">
+                                    <span className="flex justify-center self-center transition duration-700 overflow-hidden">
                                         <Image src={f5} alt='fotos da comunidade' className="h-[450px] sm:h-[560px] max-w-max"/>
                                     </span>                       
                                 </div>
