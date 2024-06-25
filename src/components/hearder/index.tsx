@@ -59,7 +59,7 @@ export const Header = () => {
                     </button>
                 </div>
                 <dialog className="md:hidden" open={mobileMenuOpen} >
-                    <div className="fixed inset-y-0 right-0 z-10 max-w-fit max-h-fit overflow-y-auto bg-green-50 shadow-xl p-6 rounded">
+                    <div className="fixed inset-y-0 right-0 z-20 max-w-fit max-h-fit overflow-y-auto bg-green-50 shadow-xl p-6 rounded">
                         <div className="flex items-center justify-end">
                             <button
                             type="button"

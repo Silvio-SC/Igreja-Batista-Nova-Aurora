@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <section className="
-        flex min-h-full flex-col items-center justify-center px-6 py-28 sm:py-32 md:px-24 md:py-48 font-roboto
+        flex min-h-full flex-col items-center justify-center px-6 py-40 md:px-24 md:py-48 font-roboto
         bg-[url('../assets/Background.png')] bg-no-repeat bg-cover bg-center
         ">
         <div className="flex flex-col z-10 max-w-5xl w-full gap-12">
