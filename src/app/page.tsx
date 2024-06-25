@@ -30,6 +30,9 @@ export default function Home() {
         </h2>
         <Pastores />
       </section> 
+      <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
+          Nossa Comunidade
+      </h2>
       <Carousel />
       <section className='flex justify-center py-36'>
         <div className='w-3/4 rounded-lg overflow-hidden'>
