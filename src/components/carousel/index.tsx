@@ -9,7 +9,7 @@ export const Carousel = () => {
 
     return(
         <section className="grid grid-cols-5 bg-green-50 py-36">
-            <div className="p-8 bg-green-50 col-start-2 col-end-5"> 
+            <div className="p-8 bg-green-50 col-start-1 col-end-6 md:col-start-2 md:col-end-5"> 
                 <div data-hs-carousel='{
                     "loadingClasses": "opacity-0",
                     "isAutoPlay": true
@@ -17,37 +17,37 @@ export const Carousel = () => {
                     <div className="hs-carousel relative overflow-hidden w-full min-h-[450px] bg-white rounded-lg">
                         <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
                             <div className="hs-carousel-slide">
-                                <div className="flex justify-center h-full">
-                                <span className="self-center text-4xl transition duration-700 ">
-                                    <Image src={f1} alt='fotos da comunidade'/>
+                                <div className="flex justify-center">
+                                <span className="self-center transition duration-700 overflow-hidden ">
+                                    <Image src={f1} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0 lg:ml-0"/>
                                 </span>
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
-                                <div className="flex justify-center h-full">
-                                    <span className="self-center text-4xl transition duration-700">
-                                        <Image src={f2} alt='fotos da comunidade'/>
+                                <div className="flex justify-center">
+                                    <span className="self-center transition duration-700 overflow-hidden">
+                                        <Image src={f2} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0"/>
                                     </span>
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
-                                <div className="flex justify-center h-full">
-                                    <span className="self-center text-4xl transition duration-700">
-                                        <Image src={f3} alt='fotos da comunidade'/>
+                                <div className="flex justify-center">
+                                    <span className="self-center transition duration-700 overflow-hidden">
+                                        <Image src={f3} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0"/>
                                     </span>                        
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
-                                <div className="flex justify-center h-full">
-                                    <span className="self-center text-4xl transition duration-700">
-                                        <Image src={f4} alt='fotos da comunidade'/>
+                                <div className="flex justify-center">
+                                    <span className="self-center transition duration-700 overflow-hidden">
+                                        <Image src={f4} alt='fotos da comunidade' className="h-[450px] sm:h-[520px] max-w-max md:ml-[-50%] lg:ml-0"/>
                                     </span>                        
                                 </div>
                             </div>
                             <div className="hs-carousel-slide">
-                                <div className="flex justify-center h-full">
-                                    <span className="self-center text-4xl transition duration-700">
-                                        <Image src={f5} alt='fotos da comunidade'/>
+                                <div className="flex justify-center">
+                                    <span className="self-center transition duration-700 overflow-hidden">
+                                        <Image src={f5} alt='fotos da comunidade' className="h-[450px] sm:h-[560px] max-w-max"/>
                                     </span>                       
                                 </div>
                             </div>

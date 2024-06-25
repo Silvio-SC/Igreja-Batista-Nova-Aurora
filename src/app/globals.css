@@ -20,4 +20,5 @@ body {
   /* color: rgb(var(--foreground-rgb)); */
   color: #312e81;
   background-color: rgb(240 253 244);    
+  box-sizing: border-box;
 }

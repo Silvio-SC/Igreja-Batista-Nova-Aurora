@@ -6,10 +6,10 @@ export const Activities = () => {
             <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
                 Atividades
             </h2>
-            <div className="w-auto flex gap-4">
-                <div className="bg-transparent">
+            <div className="w-auto flex flex-col md:flex-row gap-4">
+                <div className="bg-transparent flex flex-col itens-center">
                     <h3 className="text-center font-['Roboto'] pb-0 border-b-2 border-black text-xl font-medium text-xl font-medium drop-shadow-[1px_1px_1px_rgba(244,171,12,0.75)] xl:text-3xl xl:border-b-3">Domingo</h3>
-                    <ul className="flex flex-col gap-2 p-2">
+                    <ul className="flex flex-col gap-2 p-2 w-[320px]t">
                         <ActivityCard> 07:30 - Culto de Oração</ActivityCard> 
                         <ActivityCard> 08:30 - Escola Biblica Dominical</ActivityCard> 
                         <ActivityCard> 10:00 - Culto Matutino</ActivityCard> 
@@ -19,7 +19,7 @@ export const Activities = () => {
                 </div>
                 <div className="bg-transparent">
                     <h3 className="text-center font-['Roboto'] pb-0 border-b-2 border-black text-xl font-medium drop-shadow-[1px_1px_1px_rgba(244,171,12,0.75)] xl:text-3xl xl:border-b-3">Quarta</h3>
-                    <ul className="flex flex-col gap-3 p-2">
+                    <ul className="flex flex-col gap-3 p-2 ">
                         <ActivityCard> 18:30 - Culto de Oração</ActivityCard> 
                         <ActivityCard> 19:30 - Estudo Bíblico</ActivityCard> 
                     </ul>
@@ -28,16 +28,16 @@ export const Activities = () => {
                     <h3 className="text-center font-['Roboto'] pb-0 border-b-2 border-black text-xl font-medium drop-shadow-[1px_1px_1px_rgba(244,171,12,0.75)] xl:text-3xl xl:border-b-3">Outros Dias</h3>
                     <ul className="flex flex-col gap-3 p-2">
                         <ActivityCard> 
-                            <p>Segunda</p>
+                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Segunda</p>
                             <p>19:00 - Embaixadores e Mensageiras do Rei</p>
                             <p>19:30 - Ide e Pregai</p>
                         </ActivityCard> 
                         <ActivityCard> 
-                            <p>Sexta</p>
+                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Sexta</p>
                             <p>18:00 - Orquestra</p>
                         </ActivityCard> 
                         <ActivityCard> 
-                            <p>Sabado</p>
+                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Sabado</p>
                             <p>14:00 - Aulas de Música</p>
                         </ActivityCard> 
                     </ul>

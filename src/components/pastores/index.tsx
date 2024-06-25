@@ -5,7 +5,7 @@ import { PastoresCard } from "./PastoresCard"
 
 export const Pastores = () => {
     return(
-        <section className="flex gap-[5%] justify-center">
+        <section className="flex flex-col items-center gap-12 lg:gap-[5%] lg:flex-row justify-center">
             <PastoresCard 
                 img={Geu}  
                 name="Pr. Genilson Zamba" 
