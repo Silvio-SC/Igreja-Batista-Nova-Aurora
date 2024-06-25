@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <section className="
-        flex min-h-full flex-col items-center justify-center px-6 py-40 md:px-24 md:py-48 font-roboto
+        flex min-h-full flex-col items-center justify-center px-6 py-40 sm:py-32 md:px-24 md:py-48 font-roboto
         bg-[url('../assets/Background.png')] bg-no-repeat bg-cover bg-center
         ">
         <div className="flex flex-col z-10 max-w-5xl w-full gap-12">
@@ -30,9 +30,11 @@ export default function Home() {
         </h2>
         <Pastores />
       </section> 
-      <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
+      <div className="bg-green-50 flex flex-col items-center">
+        <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
           Nossa Comunidade
-      </h2>
+        </h2>
+      </div>
       <Carousel />
       <section className='flex justify-center py-36'>
         <div className='w-3/4 rounded-lg overflow-hidden'>
