@@ -2,6 +2,8 @@ import { Activities } from '@/components/activities'
 import { Carousel } from '@/components/carousel'
 import { Pastores } from '@/components/pastores'
 import { PhrasesSection } from '@/components/phrases'
+import Link from 'next/link'
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -41,6 +43,17 @@ export default function Home() {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.939469195651!2d-43.58516207468929!3d-22.915603379248807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be46c907dce03%3A0xcfa5d6830478b1b4!2sIgreja%20Batista%20Nova%20Aurora!5e0!3m2!1spt-BR!2sbr!4v1706315692149!5m2!1spt-BR!2sbr" width="100%" height="450" loading="lazy"></iframe>
         </div>
       </section>
+      <span className='fixed bottom-2 left-2 flex flex-col gap-4 bg-indigo-950 rounded border px-4 py-6'>
+        <Link href={"https://www.facebook.com/NovaAuroraIgrejaBatista/"} target="_blank">
+            <FaFacebook className="text-white hover:text-blue-600" size="1.5rem"/>
+        </Link>
+        <Link href={"https://www.instagram.com/ibnovaaurora/"} target="_blank">
+            <FaInstagram className="text-white hover:text-pink-600" size="1.5rem"/>
+        </Link>
+        <Link href={"https://www.youtube.com/@IBNovaAuroraCG"} target="_blank">
+            <FaYoutube className="text-white hover:text-red-600" size="1.5rem"/>
+        </Link>
+      </span>
     </main>
   )
 }
