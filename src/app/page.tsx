@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <section className="
         flex min-h-full flex-col items-center justify-center px-6 py-40 sm:py-32 md:px-24 md:py-48 font-roboto
-        bg-[url('../assets/Background.png')] bg-no-repeat bg-cover bg-center
+        min-[450px]:bg-[url('../assets/Background.png')] bg-[url('../assets/BackgroundMobile.png')] bg-no-repeat bg-cover bg-center
         ">
         <div className="flex flex-col z-10 max-w-5xl w-full gap-12">
             <h1 className="
@@ -27,7 +27,7 @@ export default function Home() {
       <Activities />
       {/* <PhrasesSection /> */}
       <section className="px-8 py-36 bg-green-50 flex flex-col items-center gap-24">
-        <h2 className="font-['Dancing_Script'] text-5xl font-normal drop-shadow-yellow xl:text-7xl">
+        <h2 className="font-['Dancing_Script'] text-5xl text-center font-normal drop-shadow-yellow xl:text-7xl">
           Equipe Pastoral
         </h2>
         <Pastores />

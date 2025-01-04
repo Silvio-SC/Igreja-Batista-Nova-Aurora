@@ -13,19 +13,25 @@ export const Activities = () => {
                         <ActivityCard> 07:30 - Culto de Oração</ActivityCard> 
                         <ActivityCard> 08:30 - Escola Biblica Dominical</ActivityCard> 
                         <ActivityCard> 10:00 - Culto Matutino</ActivityCard> 
-                        <ActivityCard> 18:00 - União de Treinamento</ActivityCard> 
+                        <ActivityCard> 18:00 - Uniões de Treinamento</ActivityCard> 
                         <ActivityCard> 19:15 - Culto Noturno</ActivityCard> 
                     </ul>
                 </div>
                 <div className="bg-transparent">
                     <h3 className="text-center font-['Roboto'] pb-0 border-b-2 border-black text-xl font-medium drop-shadow-[1px_1px_1px_rgba(244,171,12,0.75)] xl:text-3xl xl:border-b-3">Quarta</h3>
-                    <ul className="flex flex-col gap-3 p-2 ">
-                        <ActivityCard> 18:30 - Culto de Oração</ActivityCard> 
-                        <ActivityCard> 19:30 - Estudo Bíblico</ActivityCard> 
+                    <ul className="flex flex-col gap-3 p-2 "> 
+                        <ActivityCard> 
+                            <p>Primeira Quarta do Mês</p>
+                            <p>19:30 - Culto nos Lares</p>
+                        </ActivityCard> 
+                        <ActivityCard> 
+                            <p>Demais Quartas</p>
+                            <p>19:30 - Estudo Bíblico</p>
+                        </ActivityCard> 
                     </ul>
                 </div>
                 <div className="bg-transparent">
-                    <h3 className="text-center font-['Roboto'] pb-0 border-b-2 border-black text-xl font-medium drop-shadow-[1px_1px_1px_rgba(244,171,12,0.75)] xl:text-3xl xl:border-b-3">Outros Dias</h3>
+                    <h3 className="text-center font-['Roboto'] pb-0 border-b-2 border-black text-xl font-medium drop-shadow-[1px_1px_1px_rgba(244,171,12,0.75)] xl:text-3xl xl:border-b-3">Outros dias</h3>
                     <ul className="flex flex-col gap-3 p-2">
                         <ActivityCard> 
                             <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Segunda</p>
@@ -33,12 +39,17 @@ export const Activities = () => {
                             <p>19:30 - Ide e Pregai</p>
                         </ActivityCard> 
                         <ActivityCard> 
-                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Sexta</p>
-                            <p>18:00 - Orquestra</p>
+                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Terça</p>
+                            <p>08:30 - Jardim de Oração</p>
+                            <p>19:30 - Ensaio do Coral Renascer</p>
                         </ActivityCard> 
                         <ActivityCard> 
-                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Sabado</p>
-                            <p>14:00 - Aulas de Música</p>
+                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Quinta</p>
+                            <p>19:00 - Clube de Xadrez</p>
+                        </ActivityCard> 
+                        <ActivityCard> 
+                            <p className="drop-shadow-[1px_1px_1px_rgba(244,171,12,0.5)]">Sexta</p>
+                            <p>18:00 - Orquestra</p>
                         </ActivityCard> 
                     </ul>
                 </div>
